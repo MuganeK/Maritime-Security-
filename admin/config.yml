@@ -1,0 +1,122 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: articles
+    label: Articles & Field Studies
+    label_singular: Article or Field Study
+    folder: content/articles
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}} — {{article_type}}"
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        required: true
+      - name: tag
+        label: Tag / Subheading
+        widget: string
+        required: true
+        hint: "For example: MARINE BOTANY or OPEN ACCESS RESEARCH"
+      - name: article_type
+        label: Article Type
+        widget: select
+        required: true
+        options:
+          - label: Open Access Research
+            value: Open Access Research
+          - label: Field Study
+            value: Field Study
+          - label: Brief
+            value: Brief
+      - name: publication_date
+        label: Publication Date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        date_format: "DD MMM YYYY"
+        time_format: false
+        picker_utc: true
+        required: true
+      - name: reading_time
+        label: Reading Time
+        widget: string
+        required: true
+        hint: "For example: 14 min"
+      - name: biocultural_zone
+        label: Biocultural Zone
+        widget: select
+        required: true
+        options:
+          - The Lamu Mangrove Canopy
+          - Shimoni–Kisite Coral Marine Park
+          - Chwaka Bay Seagrass Meadows
+          - The Malindi-Ungwana Bay Prawn Shelf
+          - Rufiji Delta Deltaic Forests
+      - name: location
+        label: Location
+        widget: string
+        required: true
+        hint: "For example: Lamu Archipelago or Kilifi"
+      - name: authors
+        label: Authors / Working Group
+        widget: string
+        required: true
+      - name: abstract
+        label: Abstract / Summary
+        widget: text
+        required: true
+      - name: pdf
+        label: PDF Link / Attachment
+        widget: file
+        required: false
+      - name: body
+        label: Full Article Body
+        widget: markdown
+        required: true
+
+  - name: voices
+    label: Coastal Voices / Oral Histories
+    label_singular: Oral History
+    folder: content/voices
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{narrator}}"
+    fields:
+      - name: narrator
+        label: Narrator / Title
+        widget: string
+        required: true
+      - name: community
+        label: Community / Elder Role
+        widget: string
+        required: true
+      - name: audio_file
+        label: Audio File
+        widget: file
+        required: false
+      - name: audio_url
+        label: Audio URL
+        widget: string
+        required: false
+      - name: duration
+        label: Duration
+        widget: string
+        required: false
+        hint: "For example: 18:42"
+      - name: transcript
+        label: Transcript
+        widget: markdown
+        required: true

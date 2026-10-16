@@ -1,0 +1,13 @@
+{
+  "name": "indian-ocean-littoral-archive",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:content && node scripts/copy-site.mjs",
+    "build:content": "node scripts/build-content-index.mjs",
+    "watch:content": "node scripts/build-content-index.mjs --watch"
+  },
+  "devDependencies": {
+    "yaml": "^2.8.1"
+  }
+}
