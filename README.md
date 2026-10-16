@@ -1,28 +1,27 @@
-# Maritime Security Policy Hub
+# Indian Ocean Littoral Archive & Maritime Studies Hub
 
-An interactive digital resource and policy framework focused on regional maritime security, coastal governance, and strategic domain awareness.
+**MSPH — Open Scholarship, Coastal Heritage & Littoral Commons**
 
----
+An open-access academic repository and public scholarship portal dedicated to Indian Ocean littoral studies, maritime heritage, indigenous ecological knowledge, and coastal resource literacy.
 
-## Overview
+## Purpose
 
-The **Maritime Security Policy Hub** is designed to provide practitioners, researchers, and maritime stakeholders with a centralised interface for exploring key conventions, regional security frameworks, coastal state rights, and domain awareness mechanisms. 
+The archive informs the public, celebrates coastal agency, and makes marine resources and littoral heritage accessible to researchers, educators, cultural custodians, and the curious public. Its field archive and publications connect peer-reviewed scholarship with community knowledge and public learning.
 
-The hub consolidates complex maritime legal regimes, operational concepts, and security dynamics into an accessible, structured digital reference.
+## Research and learning themes
 
----
+- Indigenous seamanship, star navigation, and traditional vessel craft
+- Littoral commons, customary stewardship, and coastal resource care
+- Marine ecology and artisanal fisheries literacy
+- Coastal women and post-harvest economies
+- Port heritage and Indian Ocean cosmopolitanism
+- Climate resilience and living shorelines
 
-## Key Focus Areas
+The Living Littoral Atlas presents biocultural zones and educational layers for indigenous star paths and monsoon drift, artisanal fish traps (uzio and malema), and mangrove restoration.
 
-* **Maritime Domain Awareness (MDA):** Information sharing, coastal surveillance, vessel tracking, and inter-agency coordination frameworks.
-* **Legal & Regulatory Frameworks:** Application of the United Nations Convention on the Law of the Sea (UNCLOS), safety of life at sea, and suppression of unlawful acts.
-* **Regional Maritime Security Architecture:** Strategic initiatives, reporting centres, and multilateral cooperative mechanisms across regional maritime spaces (e.g., Western Indian Ocean, Gulf of Guinea).
-* **Coastal Governance & Blue Economy Protection:** Monitoring, Control, and Surveillance (MCS) mechanisms addressing illegal, unreported, and unregulated (IUU) fishing, environmental conservation, and critical maritime infrastructure security.
-
----
-
-## File Structure
+## File structure
 
 ```text
-├── Maritime-Security-Policy-Hub.html   # Main interactive policy hub interface
-└── README.md                          # Project documentation and architectural overview
+├── Maritime-Security-Policy-Hub.html   # Interactive littoral archive and public scholarship portal
+└── README.md                           # Project overview
+```
