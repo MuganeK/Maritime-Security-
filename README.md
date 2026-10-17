@@ -30,6 +30,12 @@ To rebuild the indexes once, run `npm run build:content`.
 
 The configured `git-gateway` backend requires Netlify Identity and Git Gateway. The site itself can be hosted as static files elsewhere, but `/admin` publishing through this backend is available only when served by the configured Netlify site. Hosting the CMS on GitHub Pages instead requires changing to a separately configured GitHub OAuth backend/proxy.
 
+### GitHub Pages deployment
+
+The workflow in `.github/workflows/pages.yml` builds the site and deploys it to GitHub Pages whenever a commit is pushed to `main` (or when started manually from the Actions tab). In the repository's **Settings → Pages**, set the build and deployment source to **GitHub Actions**. The workflow publishes the generated `dist/` directory, including the `CNAME` file for `maritimepolicyhub.co.ke`.
+
+GitHub Pages hosts the static site only. The `/admin` editor uses Netlify Identity and Git Gateway, so content editing there still requires the configured Netlify backend; GitHub Pages does not provide that CMS authentication.
+
 ## Project structure
 
 ```text
